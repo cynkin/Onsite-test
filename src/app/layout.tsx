@@ -41,7 +41,10 @@ export default function RootLayout({
                 <ShowHeader>
                     <Header/>
                 </ShowHeader>
-                    <main className="flex-1">{children}</main>
+                    <main className="flex-1">
+                        {children}
+                        <video id="localVideo" autoPlay playsInline muted></video>
+                    </main>
                 <Footer/>
             </Provider>
       </body>
